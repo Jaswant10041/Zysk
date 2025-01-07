@@ -6,6 +6,9 @@ import Third from './Third'
 import Fourth from './Fourth'
 import Fifth from './Fifth'
 import Sixth from './Sixth'
+import BlogSection from './Blog'
+import FreeTrialSection from './Freetrail'
+import Footer from './Footer'
 
 const App = () => {
   return (
@@ -17,6 +20,9 @@ const App = () => {
       <Fourth/>
       <Fifth/>
       <Sixth/>
+      <BlogSection/>
+      <FreeTrialSection/>
+      <Footer/>
     </div>
   )
 }
