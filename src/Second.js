@@ -5,7 +5,7 @@ const Second = () => {
     <div className="flex flex-col items-center">
      
       
-      <img  className= "flex justify-center py-10" src="https://i.ibb.co/9Tc6fWV/cloudinay.png" width={1000} />
+      <img  className= "flex justify-center rounded-xl py-10" src="https://i.ibb.co/RQxtcW1/ndn.png" width={1000} height={700}/>
      
     </div>
 
