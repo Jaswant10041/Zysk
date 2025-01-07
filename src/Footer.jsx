@@ -245,7 +245,7 @@ const Footer = () => {
 
         {/* Divider */}
         <div className="mt-12 border-t border-gray-200 pt-8">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center flex-row-reverse">
             <p className="text-base text-gray-500">
               &copy; 2077 zysktechnologies. All rights reserved.
             </p>

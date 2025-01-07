@@ -1,5 +1,6 @@
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
+
 const BlogSection = () => {
   const blogPosts = [
     {
@@ -38,47 +39,60 @@ const BlogSection = () => {
   ];
 
   return (
-    <section className="blog-section mx-8">
-      <div className="blog-header flex justify-between">
+    <div className="mx-8">
+      <div className="flex justify-between mx-4">
         <div>
-          <p className="blog-subtitle text-red-700 font-medium">Our blog</p>
-          <h1 className="my-2 font-semibold text-3xl">Lastest blog posts</h1>
-          <p className="blog-description text-slate-400 mb-6 text-xl">
-            Tool and strategies modern teams need to help their companies grow.
+          <p className="text-red-700 font-medium">Our blog</p>
+          <h1 className="my-2 font-semibold text-3xl">Latest blog posts</h1>
+          <p className="text-slate-400 mb-6 text-xl">
+            Tools and strategies modern teams need to help their companies grow.
           </p>
         </div>
         <div className="mr-5">
-          <button className="view-all-btn bg-red-500 rounded-lg p-2 pl-3 text-white ">View all posts</button>
+          <button className="bg-red-500 rounded-lg p-2 pl-3 text-white">
+            View all posts
+          </button>
         </div>
       </div>
-      <div className="blog-posts md:flex">
+
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-8">
         {blogPosts.map((post) => (
-          <div key={post.id} className="blog-card p-2">
-            <img src={post.imageUrl} alt={post.title} className="blog-image" />
-            <div className="blog-info">
-              <span className="category text-red-600 text-medium font-medium">{post.category}</span>
-              <div className="flex justify-between text-center">
-              <h3 className="font-bold text-xl">{post.title}</h3>
-              <GoArrowUpRight className="size-7 pr-2"/>
-              </div>
-              
-              <p className="blog-description">{post.description}</p>
-              <div className="author-info flex">
-                <img
-                  src={post.imageUrl}
-                  alt={post.author}
-                  className="author-avatar rounded-full size-8 mt-2 mr-2" 
-                />
-                <div>
-                  <p className="author-name">{post.author}</p>
-                  <p className="post-date">{post.date}</p>
-                </div>
+          <div
+            key={post.id}
+            className="p-4"
+          >
+            
+            <img src={post.imageUrl} alt={post.title} className="w-full h-auto object-cover rounded-md mb-4" />
+
+            
+            <span className="text-red-600 font-medium">{post.category}</span>
+
+            {/* Title */}
+            <div className="flex justify-between items-center my-2">
+              <h2 className="font-bold text-xl">{post.title}</h2>
+              <GoArrowUpRight className="text-red-600 text-2xl" />
+            </div>
+
+            {/* Description */}
+            <p className="text-gray-600 mb-4">{post.description}</p>
+
+            {/* Author and Date */}
+            <div className="flex items-center">
+              <img
+                src={post.imageUrl}
+                alt={post.author}
+                className="w-10 h-10 rounded-full mr-3"
+              />
+              <div>
+                <p className="font-medium">{post.author}</p>
+                <p className="text-sm text-gray-400">{post.date}</p>
               </div>
             </div>
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

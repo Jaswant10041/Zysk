@@ -6,7 +6,7 @@ import { TfiCommentsSmiley } from "react-icons/tfi";
 const Fifth = () => {
   return (
     <div className="flex justify-center m-7 my-14 mt-14">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 ml-5">
         <div className="flex flex-col items-center text-center">
           <div>
             <IoChatbubblesOutline className="border-2 p-2 rounded-md size-10" />
