@@ -40,7 +40,7 @@ const BlogSection = () => {
 
   return (
     <div className="mx-8">
-      <div className="flex justify-between mx-4">
+      <div className="flex justify-between mx-4 pt-14">
         <div>
           <p className="text-red-700 font-medium">Our blog</p>
           <h1 className="my-2 font-semibold text-3xl">Latest blog posts</h1>

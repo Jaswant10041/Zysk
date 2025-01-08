@@ -9,6 +9,7 @@ import Sixth from './Sixth'
 import BlogSection from './Blog'
 import FreeTrialSection from './Freetrail'
 import Footer from './Footer'
+import FAQ from './Seventh'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Fourth/>
       <Fifth/>
       <Sixth/>
+      <FAQ/>
       <BlogSection/>
       <FreeTrialSection/>
       <Footer/>
