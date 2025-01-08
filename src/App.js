@@ -10,6 +10,7 @@ import BlogSection from './Blog'
 import FreeTrialSection from './Freetrail'
 import Footer from './Footer'
 import FAQ from './Seventh'
+import Eighth from './Eighth'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Fifth/>
       <Sixth/>
       <FAQ/>
+      <Eighth/>
       <BlogSection/>
       <FreeTrialSection/>
       <Footer/>

@@ -13,6 +13,7 @@ const BlogSection = () => {
       date: "20 Jan 2024",
       imageUrl:
         "https://i.im.ge/2025/01/07/zvHahX.Screenshot-2025-01-07-193210.png",
+        dp:"https://tse2.mm.bing.net/th?id=OIP.XpUmAprocknu5DUWuudukwAAAA&pid=Api&P=0&h=180"
     },
     {
       id: 2,
@@ -24,6 +25,7 @@ const BlogSection = () => {
       date: "19 Jan 2024",
       imageUrl:
         "https://i.im.ge/2025/01/07/zvHso9.Screenshot-2025-01-07-193218.png",
+        dp:"https://img.freepik.com/premium-photo/indian-female-software-engineer-smiling_921410-26356.jpg"
     },
     {
       id: 3,
@@ -35,6 +37,7 @@ const BlogSection = () => {
       date: "18 Jan 2024",
       imageUrl:
         "https://i.im.ge/2025/01/07/zvHdWK.Screenshot-2025-01-07-193233.png",
+        dp:"https://tse1.mm.bing.net/th?id=OIP.DFRaWaJE3dAIFSkd_xJEQAHaE7&pid=Api&P=0&h=180"
     },
   ];
 
@@ -80,7 +83,7 @@ const BlogSection = () => {
             {/* Author and Date */}
             <div className="flex items-center">
               <img
-                src={post.imageUrl}
+                src={post.dp}
                 alt={post.author}
                 className="w-10 h-10 rounded-full mr-3"
               />
