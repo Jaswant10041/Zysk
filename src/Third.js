@@ -2,7 +2,7 @@ import React from "react";
 
 const Third = () => {
   return (
-    <div className="mb-12">
+    <div className="mb-12 px-8 sm:px-14">
       <div className="flex justify-center mt-7">
         <p className="text-slate-600 text-xl">
           Join 4,000+ companies already growing

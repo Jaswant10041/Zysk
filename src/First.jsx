@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { MdSlowMotionVideo } from "react-icons/md";
 const First = () => {
   return (
-    <div className="flex flex-col items-center text-center">
+    <div className="flex flex-col items-center text-center justify-center px-8 sm:px-13 w-full">
       <div className="mt-20">
         <button className="border-2 rounded-full tracking-wide p-1 pr-3  border-orange-200 flex text-red-600 font-medium items-center justify-center">
           <button className="border-2 border-orange-300 rounded-full px-2">
